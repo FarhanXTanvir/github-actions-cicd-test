@@ -21,6 +21,13 @@ jobs:
         with:
           node-version: latest
 
+      # Setup pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: false
+
       # Install Dependencies
       - name: Install Dependencies
         run: pnpm install
@@ -34,4 +41,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: dist
