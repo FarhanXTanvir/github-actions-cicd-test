@@ -9,7 +9,7 @@ export default function App() {
     >
       <button
         style={{
-          color: "red",
+          color: "black",
           fontSize: "20px",
           backgroundColor: "lightblue",
           padding: "10px",
@@ -21,7 +21,7 @@ export default function App() {
           cursor: "pointer",
         }}
       >
-        Github Actions, CI/CD Test
+        Github Actions Success!!
       </button>
     </div>
   );
